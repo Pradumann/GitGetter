@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GitGetter</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_bar_title">Search git</string>
+    <string name="title_activity_repo_details">RepoDetails</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="id">id</string>
+    <string name="contributors_list">Contributors list</string>
+    <string name="project_link">Project link</string>
+    <string name="title_activity_main">ProjectDetails</string>
+    <string name="title_activity_project_details">ProjectDetails</string>
+    <string name="title_activity_contributor_details">ContributorDetails</string>
+    <string name="profile_link">Profile link</string>
+    <string name="contributor_repo_list">Contributor Repo list</string>
+    <string name="watchers">Watchers :</string>
+    <string name="repo_list_loading_dialog_title">Getting repo list...</string>
+    <string name="repo_list_loading_dialog_msg">Please wait while we search git repo</string>
+    <string name="repo_not_found_toast_msg">No repo found..!</string>
+    <string name="repo_loading_fail_toast_msg">Failed to download repo list. Please try again</string>
+    <string name="contributor_loading_fail_toast_msg">Failed to download contributors list. Please try again</string>
+    <string name="contributor_not_found_toats_msg">No contributor found</string>
+    <string name="loading_contributor_dialog_title">Getting contributors list...</string>
+    <string name="loading_contributor_dialog_msg">Please wait while we search git</string>
+    <string name="filter">Filter</string>
+    <string name="no_internet_fail_to_load_repo_list">No Internet..!, Unable to get repo list</string>
+    <string name="fail_to_open_link_toast_message">No Internet..!, Can not open link</string>
+    <string name="fail_to_load_contributor_list_toast_msg">No Internet..!, Failed to download contributor list</string>
+    <string name="size">Size :</string>
+    <string name="score">Score :</string>
+    <string name="username">Username :</string>
+    <string name="contributions">Contributions :</string>
+    <string name="full_name">Full name</string>
+</resources>

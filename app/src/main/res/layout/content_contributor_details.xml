@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mappr.gitgetter.Activities.ContributorDetails"
+    tools:showIn="@layout/activity_contributor_details"
+    android:padding="@dimen/activity_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="@dimen/image_view_dimensions"
+            android:layout_height="@dimen/image_view_dimensions"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/avatar_iv"
+            android:layout_marginLeft="@dimen/elements_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/contributor_user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorIndigo"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Yo"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/id"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/contributor_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginLeft="@dimen/elements_margin"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="@string/profile_link"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/contributor_profile_link_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_line_height"
+        android:background="@color/color_horizontal_line"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size"
+        android:text="@string/contributor_repo_list"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/elements_margin"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contributor_repo_list_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/recycle_view_vertical_margin"/>
+
+</LinearLayout>
