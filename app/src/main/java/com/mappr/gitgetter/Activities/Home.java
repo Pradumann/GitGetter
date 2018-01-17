@@ -45,6 +45,8 @@ public class Home extends AppCompatActivity implements
     private EditText filterET;
     ProgressDialog progress;
 
+    //Home
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
