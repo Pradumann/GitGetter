@@ -44,6 +44,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mappr.gitgetter.Activities.RepoDetails" />
         </activity>
+        <activity
+            android:name=".Activities.Filter"
+            android:label="@string/title_activity_filter"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

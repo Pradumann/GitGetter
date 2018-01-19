@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mappr.gitgetter.Activities.Filter"
+    tools:showIn="@layout/activity_filter"
+    android:paddingVertical="@dimen/activity_padding"
+    android:paddingHorizontal="@dimen/activity_padding"
+    android:background="@color/colorWhite">
+
+    <Button
+        android:id="@+id/apply_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:padding="@dimen/activity_padding"
+        android:text="@string/apply_filters"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorIndigo"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/elements_margin"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/apply_filter_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Language filter -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <CheckBox
+                    android:id="@+id/language_assembly_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Assembly"/>
+
+                <CheckBox
+                    android:id="@+id/language_java_script_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="JavaScript"/>
+
+                <CheckBox
+                    android:id="@+id/language_swift_script_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Swift"/>
+
+                <CheckBox
+                    android:id="@+id/language_go_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Go"/>
+
+                <CheckBox
+                    android:id="@+id/language_java_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Java"/>
+
+                <CheckBox
+                    android:id="@+id/language_shell_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Shell"/>
+
+                <CheckBox
+                    android:id="@+id/language_html_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="HTML"/>
+
+                <CheckBox
+                    android:id="@+id/language_c_plus_plus_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="C++"/>
+
+                <CheckBox
+                    android:id="@+id/language_elm_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="Elm"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_line_height"
+                android:background="@color/color_horizontal_line"
+                android:layout_marginTop="@dimen/elements_margin"
+                android:layout_marginBottom="@dimen/elements_margin"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forks"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <RadioGroup
+                    android:id="@+id/forks_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_0_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 0"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_20_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More than 20"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_50_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More than 50"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_100_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More than 100"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_200_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 200"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_350_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 350"/>
+
+                    <RadioButton
+                        android:id="@+id/fork_mt_500_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 500"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_line_height"
+                android:background="@color/color_horizontal_line"
+                android:layout_marginTop="@dimen/elements_margin"
+                android:layout_marginBottom="@dimen/elements_margin"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <RadioGroup
+                    android:id="@+id/score_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/score_mt_0_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 0"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_5_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 5"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_10_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 10"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_15_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 15"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_20_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 20"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_25_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 25"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_35_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 35"/>
+
+                <RadioButton
+                    android:id="@+id/score_mt_50_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" More than 50"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_line_height"
+                android:background="@color/color_horizontal_line"
+                android:layout_marginTop="@dimen/elements_margin"
+                android:layout_marginBottom="@dimen/elements_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <RadioGroup
+                    android:id="@+id/size_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/size_lt_20000_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 20,000"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_10000_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 10,000"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_5000_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 5000"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_2000_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 2000"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_1500_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 1500"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_1000_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 1000"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_500_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 500"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_350_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 350"/>
+
+                <RadioButton
+                    android:id="@+id/size_lt_200_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Less than 200"/>
+
+                    <RadioButton
+                        android:id="@+id/size_lt_100_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Less than 100"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_line_height"
+                android:background="@color/color_horizontal_line"
+                android:layout_marginTop="@dimen/elements_margin"
+                android:layout_marginBottom="@dimen/elements_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stargrazers"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <CheckBox
+                    android:id="@+id/star_g_0_50_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="0 to 50"/>
+
+                <CheckBox
+                    android:id="@+id/star_g_51_100_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="51 to 100"/>
+
+
+                <CheckBox
+                    android:id="@+id/star_g_101_200_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="101 to 200"/>
+
+                <CheckBox
+                    android:id="@+id/star_g_201_500_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="201 to 500"/>
+
+                <CheckBox
+                    android:id="@+id/star_g_501_1000_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="501 to 1000"/>
+
+
+                <CheckBox
+                    android:id="@+id/star_g_1001_2000_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:text="1001 to 2000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_line_height"
+                android:background="@color/color_horizontal_line"
+                android:layout_marginTop="@dimen/elements_margin"
+                android:layout_marginBottom="@dimen/elements_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watchers"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginBottom="@dimen/elements_margin"/>
+
+                <RadioGroup
+                    android:id="@+id/watchers_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_0_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 0"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_10_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 10"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_25_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 25"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_50_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 50"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_100_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 100"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_200_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 200"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_500_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 500"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_1000_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 1000"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_5000_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 5000"/>
+
+                    <RadioButton
+                        android:id="@+id/watchers_mt_10000_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" More than 10,000"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

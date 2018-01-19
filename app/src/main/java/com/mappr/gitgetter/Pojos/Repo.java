@@ -14,13 +14,18 @@ public class Repo {
     private Owner owner;
     private License license;
     private int watchers;
+    private int forks_count;
+    private int stargazers_count;
     private int size;
     private double score;
     private String full_name;
+    private String language;
 
 
     public Repo(String name, String html_url, String description, String contributors_url,
-                int id, Owner owner, License license, int watchers, int size, double score, String full_name) {
+                int id, Owner owner, License license, int watchers, int forks_count,
+                int stargazers_count, int size, double score, String full_name, String language) {
+
         this.name = name;
         this.html_url = html_url;
         this.description = description;
@@ -29,9 +34,37 @@ public class Repo {
         this.owner = owner;
         this.license = license;
         this.watchers = watchers;
+        this.forks_count = forks_count;
+        this.stargazers_count = stargazers_count;
         this.size = size;
         this.score = score;
         this.full_name = full_name;
+        this.language = language;
+
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public int getForks_count() {
+        return forks_count;
+    }
+
+    public void setForks_count(int forks_count) {
+        this.forks_count = forks_count;
+    }
+
+    public int getStargazers_count() {
+        return stargazers_count;
+    }
+
+    public void setStargazers_count(int stargazers_count) {
+        this.stargazers_count = stargazers_count;
     }
 
     public String getFull_name() {

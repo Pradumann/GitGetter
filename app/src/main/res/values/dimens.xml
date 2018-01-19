@@ -16,4 +16,5 @@
     <dimen name="contributor_list_item_height">120dp</dimen>
     <dimen name="image_view_dimensions">130dp</dimen>
     <dimen name="list_item_avatar_dimensions">130dp</dimen>
+    <dimen name="button_height">50dp</dimen>
 </resources>

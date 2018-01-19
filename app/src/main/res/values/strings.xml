@@ -31,4 +31,9 @@
     <string name="username">Username :</string>
     <string name="contributions">Contributions :</string>
     <string name="full_name">Full name</string>
+    <string name="title_activity_filter">Filter</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="language">Language</string>
+    <string name="forks">Forks</string>
+    <string name="stargrazers">Stargrazers</string>
 </resources>
